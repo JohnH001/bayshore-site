@@ -8,106 +8,117 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Bayshore</title>
 </head>
-<body>
+<body class="themed light-theme">
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar themed light-theme">
         <div class="container flex">
             <h1 class="logo">Bayshore</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="https://github.com/JohnH001" target="_blank" rel="noopener noreferrer">Github</a></li>
+                    <li>
+                        <button id="theme-toggle" class="themed light-theme" aria-label="Switch to dark theme">
+                            <i class="fas fa-moon rotate" id="theme-icon"></i>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
     </div>
 
     <!-- Showcase -->
-    <section class="showcase">
+    <section class="showcase themed light-theme">
         <div class="container grid">
             <div class="showcase-text">
                 <h1>This is <span>Bayshore</span>.</h1>
                 <h2>Creator of digital solutions.</h2>
-                <a href="https://github.com/JohnH001" target="_blank" rel="noopener noreferrer" class="btn btn-outline">See my projects</a>
+                <a href="https://github.com/JohnH001" target="_blank" rel="noopener noreferrer" class="btn btn-outline themed light-theme">See my projects</a>
             </div>
-            <div class="showcase-form card">
+            <div class="showcase-form card themed sec-light-theme">
                 <h2>Contact Bayshore</h2>
                 <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/8t4FfIADc0hom1gtL9vB">
                     <div class="form-control">
-                        <input type="text" name="name" placeholder="name (required)" rules="required">
+                        <input type="text" name="name" placeholder="name (required)" rules="required" class="themed sec-light-theme">
                     </div>
                     <div class="form-control">
-                        <input type="text" name="email" placeholder="email (required)" rules="email|required">
+                        <input type="text" name="email" placeholder="email (required)" rules="email|required" class="themed sec-light-theme">
                     </div>
                     <div class="form-control">
-                        <input type="text" name="company" placeholder="company (optional)">
+                        <input type="text" name="company" placeholder="company (optional)" class="themed sec-light-theme">
                     </div>
                     <div class="form-control">
-                        <textarea name="comments" cols="30" rows="5" placeholder="comments (optional)"></textarea>
+                        <textarea name="comments" cols="30" rows="5" placeholder="comments (optional)" class="themed sec-light-theme"></textarea>
                     </div>
-                    <input type="submit" value="Send" class="btn btn-primary">
+                    <input type="submit" value="Send" class="btn themed light-theme">
                 </form>
             </div>
         </div>
     </section>
 
     <!-- TOOLS -->
-    <section class="tools">
-        <h2 class="md text-center my-2">Frequently Used Tools</h2>
+    <section class="tools themed sec-light-theme">
+        <div>
+            <h2 class="md text-center">Frequently Used Tools</h2>
+        </div>        
         <div class="container flex">
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>Python</h4>
                 <div class="img-container"><img src="images/logos/python.png" alt=""></div>                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>Javascript</h4>
                 <div class="img-container"><img src="images/logos/js.png" alt=""></div>                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>HTML</h4>
                 <div class="img-container"></div><img src="images/logos/html5.png" alt="">                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>CSS</h4>
                 <div class="img-container"><img src="images/logos/css3.png" alt=""></div>                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>Flask</h4>
                 <div class="img-container"><img src="images/logos/flask.png" alt=""></div>                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>SQLite</h4>
                 <div class="img-container"><img src="images/logos/Sqlite.svg.png" alt=""></div>                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>PostgreSQL</h4>
                 <div class="img-container"><img src="images/logos/pg2.png" alt=""></div>                
             </div>
-            <div class="card">
+            <div class="card themed sec-light-theme">
                 <h4>Git</h4>
                 <div class="img-container"><img src="images/logos/git.png" alt=""></div>                
             </div>
-            <div class="card">
-                <h4>Stack Overflow</h4>
-                <div class="img-container"><img src="images/logos/stack.png" alt=""></div>                
+            <div class="card themed sec-light-theme">
+                <h4>S O</h4>
+                <div class="img-container"><img src="images/logos/stack.svg" alt=""></div>                
             </div>
         </div>
     </section>
 
+    <section class="themed sec-light-theme spacer">
+        <h1> </h1>
+    </section>
+
     <!-- FOOTER -->
-    <footer class="footer bg-dark py-5">
+    <footer class="footer themed light-theme">
         <div class="container grid grid-3">
-            <div>
+            <div class="grid-3-left">
                 <h1>Bayshore</h1>
                 <p>Copyright &copy; 2021</p>
             </div>
-            <nav>
+            <div class="grid-3-center">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="https://github.com/JohnH001" target="_blank" rel="noopener noreferrer">Github</a></li>
                 </ul>
-            </nav>
-            <div class="social">
+            </div>
+            <div class="grid-3-right">
                 <a 
                 href="https://github.com/JohnH001" 
                 target="_blank"
@@ -116,6 +127,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
 </body>
 </html>
