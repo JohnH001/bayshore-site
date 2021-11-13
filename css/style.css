@@ -147,11 +147,11 @@ img {
     gap: 40px;
 }
 
-.showcase-text h1{
+.showcase-text h2{
     font-size: 3.2rem;
 }
 
-.showcase-text h2{
+.showcase-text p{
     font-size: 3rem;
 }
 
@@ -210,7 +210,7 @@ img {
     transition: transform 0.2s ease-in;
 }
 
-.tools .card h4 {
+.tools .card h3 {
     font-size: 18px;
     margin-bottom: 8px;
 }
